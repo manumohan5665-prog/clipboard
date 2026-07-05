@@ -140,6 +140,19 @@ h3 {
     gap: 30px;
 }
 
+.download {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.download h2 {
+    color: hsl(210, 10%, 33%);
+}
+
+.download p {
+    color: hsl(201, 11%, 66%);
+}
+
 footer {
     background-color: #f5f6f8;
     padding: 40px 120px;
@@ -224,6 +237,16 @@ footer {
     .companies{
         flex-direction: column;
         gap: 40px;
+    }
+
+    .btn-download{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .btn-download button{
+        width: 100%;
     }
 
     footer {
