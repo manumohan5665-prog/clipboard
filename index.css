@@ -1,0 +1,241 @@
+body {
+    margin: 0;
+    font-family: Bai Jamjuree;
+}
+
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    position: relative;
+    height: 500px;
+    background: url(./images/bg-header-desktop.png) center/cover no-repeat;
+
+}
+
+.hero h1 {
+    color: hsl(210, 10%, 33%);
+}
+
+.hero p {
+    color: hsl(201, 11%, 66%);
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#button1 {
+    background-color: hsl(171, 66%, 44%);
+    padding: 15px 35px;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+#button2 {
+    background-color: hsl(233, 100%, 69%);
+    padding: 15px 35px;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(3px);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.track-head {
+    text-align: center;
+    padding: 60px;
+}
+
+.track-head h2 {
+    color: hsl(210, 10%, 33%);
+}
+
+.track-head p {
+    color: hsl(201, 11%, 66%);
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    padding: 80px;
+}
+
+.content h3 {
+    color: hsl(210, 10%, 33%);
+}
+
+.content p {
+    color: hsl(201, 11%, 66%);
+}
+
+.devices {
+    text-align: center;
+    padding: 80px;
+}
+
+.devices img {
+    width: 80%;
+    margin-top: 80px;
+}
+
+.devices h2 {
+    color: hsl(210, 10%, 33%);
+}
+
+.devices p {
+    color: hsl(201, 11%, 66%);
+}
+
+.workflow h2,
+h3 {
+    text-align: center;
+    color: hsl(210, 10%, 33%);
+}
+
+.workflow p {
+    text-align: center;
+    color: hsl(201, 11%, 66%);
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.card {
+    width: 300px;
+    text-align: center;
+}
+
+.companies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 80px;
+    gap: 30px;
+}
+
+footer {
+    background-color: #f5f6f8;
+    padding: 40px 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-logo img {
+    width: 60px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 80px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.column a {
+    text-decoration: none;
+    color: #756f6f;
+    font-size: 18px;
+}
+
+.column a:hover {
+    color: hsl(171, 66%, 44%);
+}
+
+.social-icons {
+    display: flex;
+    gap: 25px;
+}
+
+.social-icons img {
+    width: 25px;
+}
+
+.social-icons img:hover {
+    opacity: .7;
+}
+
+@media (max-width:768px) {
+
+    .hero{
+        background: url(./images/bg-header-mobile.png);
+    }
+    .btn {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .btn button{
+        width: 100%;
+    }
+
+    .features {
+        flex-direction: column;
+    }
+
+    .features img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .companies{
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+}
